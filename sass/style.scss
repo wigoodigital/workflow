@@ -1,0 +1,47 @@
+@import 'base/config';
+@import 'base/typo';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'components/forms';
+
+// Custom
+
+.slider {
+	width: 100%;
+	margin: 30px auto;
+}
+.slick-slide {
+	margin: 0px 20px;
+	transition: all ease-in-out .3s;
+	img {
+		width: 100%;
+	}
+}
+.slick-prev {
+	&:before {
+		color: black;
+	}
+}
+.slick-next {
+	&:before {
+		color: black;
+	}
+}
+.slick-current {
+	opacity: 1;
+}
+.slick-disabled {
+	opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.slider {
+		padding: 0 15px;
+	}
+	.slick-prev {
+		left: -5px;
+	}
+	.slick-next {
+		right: -5px;
+	}
+}
