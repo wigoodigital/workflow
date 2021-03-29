@@ -47,8 +47,8 @@ function runLinter(cb) {
 
 
 function watchFiles(cb) {
-    watch('views/**.ejs', generateHTML);
-    watch('sass/**.scss', generateCSS);
+    watch('views/**/*.ejs', generateHTML);
+    watch('sass/**/*.scss', generateCSS);
     watch([ '**/*.js', '!node_modules/**'], parallel(runLinter));
 }
 
